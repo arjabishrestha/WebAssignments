@@ -1,0 +1,65 @@
+<!--registration form with validation-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .error{
+            color: red;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Registration form with Validation</h2>
+    <div>
+        <form id="regForm">
+            <label>Full name</label>
+            <input type="text" id="name">
+            <p id="wrongname" class="error"></p>
+            <br><br>
+            <label>Email</label>
+            <input type="email" id="email">
+            <p id="wrongemail" class="error"></p>
+            <br><br>
+            <label>Password</label>
+            <input type="password" id="pword">
+            <p id="wrongpw" class="error"></p>
+            <br><br>
+            <label>Confirm Password</label>
+            <input type="password" id="conpw">
+            <p id="wrongconpw" class="error"></p>
+            <br><br>
+            <label>Age</label>
+            <input type="number" id="age">
+            <br><br>
+            <p id="wrongage" class="error"></p>
+            <input type="checkbox" id="check">I agree to terms & conditions
+            <p id="wrongchecked" class="error"></p>
+            <br><br>
+            <input type="button" id="submit" onclick="validate()" value="Submit">
+            <p id="empty" class="error"></p>
+
+            <div class="user-section">           
+            <h3>Registered Users</h3>         
+            <table id="userTable"> 
+                <thead>                               
+                <tr>                      
+                    <th>S.N.</th>         
+                    <th>Name</th>         
+                    <th>Email</th>        
+                    <th>Age</th>       
+                </tr>
+                </thead> 
+                <tbody id="userTableBody">    
+                </tbody>
+            </table>
+            <button id="clearBtn" onclick="clearAllUsers()">Clear All Users</button>  <!-- Clear button -->
+        </div>
+            <script src="formvalidate.js"></script>
+        </form>
+    </div>
+</body>
+</html>

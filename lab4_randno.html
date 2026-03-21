@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+<body>
+    <h1>Random Number Generator</h1>
+    <p>Click here to generate random number</p>
+    <button id="rand">Click here</button>
+    <script>
+        function dosth(){
+            let rndno=Math.floor(Math.random()*20+1);
+            window.alert(`it is ${rndno}`)
+        }
+        document.getElementById("rand").addEventListener("click",dosth)
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+h3{
+    font-size:30px;
+    color: brown;
+}
+img{
+    height:"200px";
+    width:"250px";
+    margin:10px;
+
+}
+nav{
+    margin:5px;
+    padding:10px;
+    border-width: 10px;
+    border-style: groove;
+    background-color: rgb(250, 227, 200);
+    display:block;
+    font-size: 20px;
+}
+.navlink{
+    margin:0px 10px;
+    text-decoration: none;
+    color:rgb(0, 0, 250) ;
+}

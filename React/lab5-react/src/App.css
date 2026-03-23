@@ -1,0 +1,38 @@
+.header {
+  text-align: center;
+  background-color: rgb(137, 109, 238);
+  border: 15px groove black;
+  color: whitesmoke;
+  font-size: 30px;
+  padding:20px;
+}
+.head{
+  text-align: center;
+  font-weight: bolder;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(137, 109, 238);
+  font-size: 40px;
+}
+table{
+  background-color:black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:whitesmoke;
+  size: 100px;
+  margin:100px;
+  padding:100px;
+}
+tr,td{
+  text-align: center;
+  padding: 30px;
+  font-size: 50px;
+}
+.footer{
+  border: 3px;
+  border-color: rgb(6, 102, 126);
+  border-style: dashed;
+  font-style: oblique;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  background-color: rgb(137, 109, 238);
+}

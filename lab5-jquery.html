@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Hide and Show</title>
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            // Hide button click event
+            $("#hideBtn").click(function(){
+                $("p").hide();
+            });
+            
+            // Show button click event
+            $("#showBtn").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery Hide and Show Example</h2>
+    
+    <p>This is a paragraph that will be hidden or shown.</p>
+    
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+</body>
+</html>

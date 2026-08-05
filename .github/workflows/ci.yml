@@ -1,0 +1,36 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Display Files
+        run: ls -la
+
+      - name: Check HTML
+        run: test -f index.html
+
+      - name: Check CSS
+        run: test -f style.css
+
+      - name: Check JavaScript
+        run: test -f script.js
+
+      - name: Print Success Message
+        run: echo "CI Completed Successfully!"
